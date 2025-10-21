@@ -34,10 +34,10 @@ public class RequestController {
         return "index";
     }
 
-    @GetMapping("/add")
+    @GetMapping("/add-request")
     public String showAddRequestForm(Model model) {
         model.addAttribute("request", new Request());
-        return "add";
+        return "add-request";
     }
 
     @PostMapping("/add")

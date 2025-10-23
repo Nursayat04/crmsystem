@@ -40,7 +40,7 @@ public class RequestController {
         return "add-request";
     }
 
-    @PostMapping("/add")
+    @PostMapping("/add-request")
     public String addRequest(@ModelAttribute("request") Request request) {
         requestService.addRequest(request);
         return "redirect:/";
